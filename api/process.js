@@ -5,7 +5,7 @@ export default async function handler(req, res) {
   const deepseekResponse = await fetch('https://api.deepseek.com/v1/chat/completions', {
     method: 'POST',
     headers: {
-      'Authorization': `Bearer sk-6e996e039a61427a991dcdeb3c6c0092`,
+      'Authorization': `Bearer ${process.env.sk-6e996e039a61427a991dcdeb3c6c0092}`,
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
